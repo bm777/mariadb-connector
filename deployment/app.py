@@ -34,7 +34,7 @@ try:
 
    print("inserting value")
    for i in range(10):
-      create_(conn, "insert into sensor.temperature (value) values ([{});".format(i))
+      create_(conn, "insert into sensor.temperature (value) values ({});".format(i))
 
    print("select operations")
    temperatures = execute(conn, "SELECT * FROM sensor.temperature;")
