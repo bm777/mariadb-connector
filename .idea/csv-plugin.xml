@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/deployment/create_table.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/deployment/install_mariadb.sh">
           <value>
             <Attribute>
