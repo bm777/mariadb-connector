@@ -14,7 +14,7 @@ def create_(conn, sql):
    cursor= conn.cursor()
    cursor.execute(sql)
    conn.commit()
-   cursor.close;
+   cursor.close()
 
 def update_(conn, sql):
    create_(conn, sql)
