@@ -20,7 +20,7 @@ try:
       port=5009)
 
    # create database
-   #create_(conn, "CREATE DATABASE sensor")
+   create_(conn, "CREATE DATABASE sensor")
 
    print("creating table")
    create_(conn, "CREATE TABLE IF NOT EXISTS sensor.temperature (id int auto_increment, value decimal(15,2), primary key(id));")
