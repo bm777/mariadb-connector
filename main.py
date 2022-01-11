@@ -6,7 +6,7 @@ class Temperature:
         self.url = url
 
     def select(self):
-        response = requests.get(self.url+"select")
+        response = requests.get(self.url)
         return response.json()
     def insert(self, data):
         response = requests.get(self.url+"select")

@@ -4,7 +4,7 @@ from operation import *
 
 app = Flask(__name__)
 
-@app.route('/temp/select')
+@app.route('/temp/')
 def select():
     conn = con()
     temperatures = execute(conn, "SELECT * FROM sensor.temperature;")
