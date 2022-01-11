@@ -14,6 +14,7 @@ def create_(conn, sql):
    cursor= conn.cursor()
    cursor.execute(sql)
    conn.commit()
+   cursor.close;
 
 def update_(conn, sql):
    create_(conn, sql)
@@ -32,7 +33,8 @@ try:
    #create_(conn, "CREATE DATABASE sensor")
 
    print("inserting value")
-   #create_(conn, "insert into sensor.temperature (value) values (41);")
+   for i in range(10):
+      create_(conn, "insert into sensor.temperature (value) values ([{});".format(i))
 
    print("select operations")
    temperatures = execute(conn, "SELECT * FROM sensor.temperature;")

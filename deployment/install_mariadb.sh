@@ -4,4 +4,6 @@ sudo apt install mariadb-server
 
 sudo apt install mariadb-client
 
+sudo apt install libmariadb3 libmariadb-dev
+
 sudo systemctl enable mariadb
